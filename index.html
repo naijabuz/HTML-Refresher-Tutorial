@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice Tutorial</title>
+    <link rel="icon" href="./M-Balloons.JPG" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <a href="#faq"><h1>Hello World!</h1></a>
+    <p>&gtcir;This is a paragraph</p>
+    <p>&gtcir;This is a paragraph</p>
+    <p>&gtcir;This is a paragraph</p>
+
+    <hr />
+
+    <a href="https://google.com" rel="follow" target="_blank"><b>Google</b></a>
+
+    <!-- New Section -->
+    <h2>My life story</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem vero quae
+      facilis nobis at quibusdam totam nam laborum nesciunt. Laboriosam, culpa.
+      Id sequi nobis quidem nesciunt eius eos animi
+      <abbr title="International Passage Sam">ipsam</abbr>.
+    </p>
+
+    <!-- Home Address -->
+    <h3>Address</h3>
+    <address>No 10, 2nd Avenue, Crescent Street, Gwarinmpa, Abuja</address>
+
+    <!-- Daily Schedule -->
+    <h3 id="daily">My Daily Schedule</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ullam
+      temporibus, aliquam minus dolore itaque ratione distinctio atque nam
+      nostrum nobis quas esse quo fuga sapiente quos maxime voluptatum velit.
+    </p>
+    <ul>
+      <li>I clean</li>
+      <li>I cook</li>
+      <li>I wash</li>
+      <li>I work</li>
+    </ul>
+
+    <hr />
+
+    <!-- Faq section-->
+    <h3 id="faq">Faq</h3>
+    <p>
+      Checkout some
+      <mark style="background-color: purple">frequently asked questions</mark>
+      for your use
+    </p>
+
+    <dl>
+      <dt>Next Travel Itenary</dt>
+      <dd>July, 2024</dd>
+
+      <dt>Is it free?</dt>
+      <dd>No, but we cover 70% of the expense</dd>
+    </dl>
+
+    <aside>
+      <details>
+        <summary>Who can use it?</summary>
+        <p>Anyone with internet access</p>
+      </details>
+
+      <details>
+        <summary>Does it include referral?</summary>
+        <p>Referral is purely optional if yu want</p>
+      </details>
+    </aside>
+
+    <hr />
+
+    <!-- Code -->
+    <h3>Code</h3>
+    <p>
+      <code>&lt;p&gt; Type Your Code Here &lt;/p&gt;</code>
+    </p>
+
+    <hr />
+
+    <!-- table -->
+    <table>
+      <caption>
+        Students Info
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tomilola</td>
+          <td>SS3</td>
+          <td>16</td>
+        </tr>
+
+        <tr>
+          <td>Dorcas</td>
+          <td>JS1</td>
+          <td>25</td>
+        </tr>
+
+        <tr>
+          <td>Assad</td>
+          <td colspan="2">New Intake</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Contact Us Form -->
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>We'd like to hear from you!</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <!-- FirstName -->
+        <p>
+          <label for="firstname">Firstname: </label>
+          <input
+            type="firstname"
+            name="firstname"
+            id="firstname"
+            placeholder="your name"
+            autocomplete="on"
+            required
+            autofocus
+          />
+        </p>
+
+        <!-- LastName -->
+        <p>
+          <label for="lastname">LastName: </label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            required
+            autocomplete="on"
+            placeholder="lastname"
+          />
+        </p>
+
+        <!-- Password -->
+        <p>
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            autocomplete="on"
+            placeholder="password"
+          />
+        </p>
+
+        <!-- Tel -->
+        <p>
+          <label for="phone">Phone: </label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            required
+            autocomplete="on"
+            placeholder="07036513120"
+            pattern="[0-9]{11}"
+          />
+        </p>
+
+        <!-- Number -->
+        <p>
+          <label for="number">Number: </label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            required
+            autocomplete="on"
+            placeholder="Enter a number"
+          />
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      &lt;&lt;&lt; &copy;
+      <a href="./M-Balloons.JPG" download>Yusuf</a> &gt;&gt;&gt;
+
+      <a href="mailto:faladeyusuf54@gmail.com">Email</a>
+      <a href="tel:+2347036513120">Contact</a>
+    </footer>
+  </body>
+</html>
