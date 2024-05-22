@@ -126,75 +126,201 @@
       <p>We'd like to hear from you!</p>
 
       <form action="https://httpbin.org/get" method="get">
-        <!-- FirstName -->
-        <p>
-          <label for="firstname">Firstname: </label>
-          <input
-            type="firstname"
-            name="firstname"
-            id="firstname"
-            placeholder="your name"
-            autocomplete="on"
-            required
-            autofocus
-          />
-        </p>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <!-- FirstName -->
+          <p>
+            <label for="firstname">Firstname: </label>
+            <input
+              type="firstname"
+              name="firstname"
+              id="firstname"
+              placeholder="your name"
+              autocomplete="on"
+              required
+              autofocus
+            />
+          </p>
 
-        <!-- LastName -->
-        <p>
-          <label for="lastname">LastName: </label>
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            required
-            autocomplete="on"
-            placeholder="lastname"
-          />
-        </p>
+          <!-- LastName -->
+          <p>
+            <label for="lastname">LastName: </label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              required
+              autocomplete="on"
+              placeholder="lastname"
+            />
+          </p>
 
-        <!-- Password -->
-        <p>
-          <label for="password">Password: </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            required
-            autocomplete="on"
-            placeholder="password"
-          />
-        </p>
+          <!-- Password -->
+          <p>
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autocomplete="on"
+              placeholder="password"
+            />
+          </p>
 
-        <!-- Tel -->
-        <p>
-          <label for="phone">Phone: </label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            required
-            autocomplete="on"
-            placeholder="07036513120"
-            pattern="[0-9]{11}"
-          />
-        </p>
+          <!-- Tel -->
+          <p>
+            <label for="phone">Phone: </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              autocomplete="on"
+              placeholder="07036513120"
+              pattern="[0-9]{11}"
+            />
+          </p>
 
-        <!-- Number -->
-        <p>
-          <label for="number">Number: </label>
-          <input
-            type="number"
-            name="number"
-            id="number"
-            required
-            autocomplete="on"
-            placeholder="Enter a number"
-          />
-        </p>
+          <!-- Number -->
+          <p>
+            <label for="dob">DOB: </label>
+            <input
+              type="number"
+              name="dob"
+              id="dob"
+              required
+              autocomplete="on"
+              placeholder="Your DOB"
+              min="1950"
+              max="2005"
+              step="1"
+            />
+          </p>
+
+          <!-- Select List -->
+          <p>
+            <label for="drink">Favorite Drink</label>
+
+            <select name="drink" id="drink" multiple size="10">
+              <option value="">Select</option>
+              <option value="peach" selected>Peach</option>
+
+              <optgroup label="Soft Drinks">
+                <option value="sprite">Sprite</option>
+                <option value="coke">Coke</option>
+                <option value="fanta">Fanta</option>
+              </optgroup>
+
+              <optgroup label="others">
+                <option value="baron-de-valls">Baron De Valls</option>
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <!-- Data List -->
+          <p>
+            <label for="coffee">Favorite Coffee</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list" />
+
+            <datalist id="coffee-list">
+              <option value="">Select</option>
+              <option value="coffee">coffee</option>
+              <option value="latte">latte</option>
+              <option value="espresso">espresso</option>
+              <option value="cortado">cortado</option>
+              <option value="americano">americano</option>
+              <option value="other">other</option>
+            </datalist>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- Radio List -->
+        <fieldset>
+          <legend>Your Favorite Food</legend>
+
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos" />
+            <label for="tacos">Tacos</label>
+          </p>
+
+          <p>
+            <input type="radio" name="food" id="rice" value="rice" />
+            <label for="rice">Rice</label>
+          </p>
+
+          <p>
+            <input type="radio" name="food" id="Spagetti" value="Spagetti" />
+            <label for="Spagetti">Spagetti</label>
+          </p>
+
+          <p>
+            <input type="radio" name="food" id="Indomie" value="Indomie" />
+            <label for="Indomie">Indomie</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- Checkbox List -->
+        <fieldset>
+          <legend>Do You Have Pets?</legend>
+
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog" />
+            <label for="dog">Dog</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat" />
+            <label for="cat">Cat</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="pets" id="Chicken" value="Chicken" />
+            <label for="Chicken">Chicken</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="pets" id="goat" value="goat" />
+            <label for="goat">Goat</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <!-- text area -->
+        <fieldset>
+          <legend>Send Me A Note</legend>
+
+          <p><label for="message">Your Message: </label></p>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message here"
+          ></textarea>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post"
+        >
+          Post
+        </button>
       </form>
     </section>
 
+    <br /><br /><br />
     <footer>
       &lt;&lt;&lt; &copy;
       <a href="./M-Balloons.JPG" download><b>Yusuf</b></a> &gt;&gt;&gt;
